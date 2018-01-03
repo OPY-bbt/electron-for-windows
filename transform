@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cp dist/*.yml wwwroot/
+cp dist/*.exe wwwroot/
+cp dist/*.yaml wwwroot/
