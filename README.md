@@ -4,7 +4,7 @@ build electron's app for windows
 
 ## Installation
 
-  $ yarn install
+  $ yarn install  
   `strongly advice use yarn`
 
 ## Contents
