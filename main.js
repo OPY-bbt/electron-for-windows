@@ -57,7 +57,7 @@ function createDefaultWindow() {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, './frontEnd/index.html'),
     protocol: 'file:',
     slashes: true
   }))
@@ -92,8 +92,8 @@ autoUpdater.on('error', (ev, err) => {
   sendToRender('error');
   sendStatusToWindow('Error in auto-updater.');
 })
-autoUpdater.on('download-progress', (ev, progressObj) => {
-  sendToRender(progressObj.percent + ' ' + progressObj.bytesPerSecond);
+autoUpdater.on('download-progress', (ev) => {
+  sendToRender(ev.percent + ' ');
   sendStatusToWindow('Download progress...');
 })
 autoUpdater.on('update-downloaded', (ev, info) => {
