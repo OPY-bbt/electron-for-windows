@@ -13,6 +13,6 @@ build electron's app for windows
   - Electron-updater autoUpdate your app when you release new version
 
 ## how to use
-  - put your builded frontEnd code in frontEnd dictionary
+  - put your builded frontEnd code in frontEnd directory
   - npm run dist:mac or dist:windows to generate installer 
 
